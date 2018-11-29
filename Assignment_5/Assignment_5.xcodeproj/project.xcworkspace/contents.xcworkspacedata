@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../Assignment_5/CuTest.c">
+   </FileRef>
+   <FileRef
+      location = "group:../Assignment_5/CuTest.h">
+   </FileRef>
+   <FileRef
+      location = "group:../Assignment_5/CuTestLicense.txt">
+   </FileRef>
+   <FileRef
+      location = "group:../Assignment_5/dictionary.txt">
+   </FileRef>
+   <FileRef
+      location = "group:../Assignment_5/hashMap.c">
+   </FileRef>
+   <FileRef
+      location = "group:../Assignment_5/hashMap.h">
+   </FileRef>
+   <FileRef
+      location = "group:../Assignment_5/input1.txt">
+   </FileRef>
+   <FileRef
+      location = "group:../Assignment_5/input2.txt">
+   </FileRef>
+   <FileRef
+      location = "group:../Assignment_5/input3.txt">
+   </FileRef>
+   <FileRef
+      location = "group:../Assignment_5/main.c">
+   </FileRef>
+   <FileRef
+      location = "group:../Assignment_5/makefile">
+   </FileRef>
+   <FileRef
+      location = "group:../Assignment_5/spellChecker.c">
+   </FileRef>
+   <FileRef
+      location = "group:../Assignment_5/tests.c">
+   </FileRef>
+   <FileRef
+      location = "self:Assignment_5.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,196 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 === Question 1a ===
+\f1\b0\fs24 \
+
+\f0\fs29\fsmilli14667 How many cost units are spent in the entire process of performing 40 consecutive push operations on an empty array which starts out at capacity 8, assuming that the array will double in capacity each time a new item is added to an already full dynamic array? 
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf2 ==== Answer ====
+\f1\fs24 \
+
+\f0\b0\fs29\fsmilli14667 # item 1 - 8 = 8 units
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 # item 9 = 8 + 1 = 9 units
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 # item 10 - 16 = 7 units
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 # item 17 = 16 + 1 = 17 units
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 # item 18 - 32 = 15 units
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 # item 33 = 32 + 1 = 33 units
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 # item 34 - 40 = 7 units
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 8 + 9 + 7 + 17 + 15 + 33 + 7 = 96 units of cost
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 96 units of cost
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf2 === Question 1b ===
+\f1\fs24 \
+
+\f0\b0\fs29\fsmilli14667 As N (ie. the number of pushes) grows large, under this strategy for resizing, what is the average big-oh complexity for a push? 
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf2  === Answer: ===
+\f1\fs24 \
+
+\f0\b0\fs29\fsmilli14667 It\'92s O(1)+. 
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 This is because the formula is:
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 = ( [N + (N/2) + (N/4) + . . . + 1 + C ] / N )
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 = (N + C) / N
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 = N / N
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 = 1
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 In the above calculation, C can be ignored as we trend towards infinity which leaves us with N / N and that leaves us with 1. In other words O(1)+ because of some variations in the operation.
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf2 === Question 2a ===
+\f1\fs24 \
+
+\f0\b0\fs29\fsmilli14667 How many cost units are spent in the entire process of performing 40 consecutive push operations on an empty array which starts out at capacity 8, assuming that the array will grow by a constant 2 spaces each time a new item is added to an already full dynamic array? 
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 # item 1 - 8 = 8 units
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 # item 9 = 8 + 1 = 9 units
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 # item 10 \'a0= 1 unit
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 # item 11 = 10 + 1 = 11 units
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 # item 12 = 1 unit
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 # item 13 = 12 + 1 = 13 units
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 # item 14 = 1 unit
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 # item 15 = 14 + 1 = 15 units
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 \'85
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 Odd Items = 17 - 39
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 = 17 + 19 + 21 + 23 + 25 + 27 + 29 + 31 + 33 + 35 + 37 + 39 = 336 units
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 Even Items = 16 - 40
+\f1\fs24 \
+
+\f0\fs29\fsmilli14667 = 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40 = 13 * 1 unit = 13 units
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 Total unit cost is 336 + 13 + 8 + 9 + 11 + 13 + 15 = 405 units
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 405 units of cost
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf2 === Question 2b ===
+\f1\fs24 \
+
+\f0\b0\fs29\fsmilli14667 As N (ie. the number of pushes) grows large, under this strategy for resizing, what is the average big-oh complexity for a push?
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf2 === Answer ===
+\f1\fs24 \
+
+\f0\b0\fs29\fsmilli14667 It\'92s O(N).
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 The constant here is that every other element ( 2 elements ) we call the function to resize the array and copy over the data. So it would look something like O ( N + C ). 
+\f1\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf2 The constant time is 2 (because every 2 operations we are guaranteed to be resizing the array). \'a0However, we can ignore the constant (2) and end up with O(N) complexity for this type of operation where N is equal to the total number of elements in the array.
+\f1\fs24 \
+}
